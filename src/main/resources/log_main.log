@@ -1,0 +1,36 @@
+
+[INFO ][2022-03-12 14:04:32,173][tasks.Tasks]  - Answer of tasks.Task1 is 5.707991444942615
+[INFO ][2022-03-12 14:04:32,223][tasks.Tasks]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-12 14:04:32,241][tasks.Tasks]  - Answer of tasks.Task3 is true
+[INFO ][2022-03-12 14:04:57,959][tasks.Tasks]  - Answer of tasks.Task1 is 5.707991444942615
+[INFO ][2022-03-12 14:04:57,975][tasks.Tasks]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-12 14:04:57,977][tasks.Tasks]  - Answer of tasks.Task3 is true
+[INFO ][2022-03-12 14:04:57,991][tasks.Tasks]  - Answer of tasks.Task4 is 
+[INFO ][2022-03-12 14:04:58,006][tasks.Tasks]  - Answer of tasks.Task5 is 78.5 and 10.0
+[INFO ][2022-03-12 14:04:58,019][tasks.Tasks]  - Answer of tasks.Task6 is true
+[INFO ][2022-03-12 14:04:58,031][tasks.Tasks]  - Answer of tasks.Task7 is -0.8391287632564133
+[INFO ][2022-03-12 14:04:58,042][tasks.Tasks]  - Answer of tasks.Task8 is 2.0
+[INFO ][2022-03-12 14:06:58,181][tasks.ITask]  - Answer of tasks.Task1 is 5.707991444942615
+[INFO ][2022-03-12 14:06:58,204][tasks.ITask]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-12 14:06:58,206][tasks.ITask]  - Answer of tasks.Task3 is true
+[INFO ][2022-03-12 14:06:58,223][tasks.ITask]  - Answer of tasks.Task4 is 
+[INFO ][2022-03-12 14:06:58,228][tasks.ITask]  - Answer of tasks.Task5 is 78.5 and 10.0
+[INFO ][2022-03-12 14:06:58,230][tasks.ITask]  - Answer of tasks.Task6 is true
+[INFO ][2022-03-12 14:06:58,233][tasks.ITask]  - Answer of tasks.Task7 is -0.8391287632564133
+[INFO ][2022-03-12 14:06:58,235][tasks.ITask]  - Answer of tasks.Task8 is 2.0
+[INFO ][2022-03-26 08:29:06,011][tasks.ITask]  - Answer of tasks.Task1 is 5.707991444942615
+[INFO ][2022-03-26 08:29:06,037][tasks.ITask]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-26 08:29:06,046][tasks.ITask]  - Answer of tasks.Task3 is true
+[INFO ][2022-03-26 08:29:06,058][tasks.ITask]  - Answer of tasks.Task4 is 
+[INFO ][2022-03-26 08:29:06,070][tasks.ITask]  - Answer of tasks.Task5 is 78.5 and 10.0
+[INFO ][2022-03-26 08:29:06,080][tasks.ITask]  - Answer of tasks.Task6 is true
+[INFO ][2022-03-26 08:29:06,100][tasks.ITask]  - Answer of tasks.Task7 is -0.8391287632564133
+[INFO ][2022-03-26 08:29:06,111][tasks.ITask]  - Answer of tasks.Task8 is 2.0
+[INFO ][2022-03-26 10:05:24,304][tasks.AbstractTask]  - Answer for 1st task is 5.707991444942615
+[INFO ][2022-03-26 10:05:24,342][tasks.AbstractTask]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-26 10:05:24,369][tasks.AbstractTask]  - Answer for 3rd task is true
+[INFO ][2022-03-26 10:05:24,384][tasks.AbstractTask]  - Answer for 3rd task is 
+[INFO ][2022-03-26 10:05:24,404][tasks.AbstractTask]  - Answer for 5th task is 10.0 and 78.5
+[INFO ][2022-03-26 10:05:24,414][tasks.AbstractTask]  - Answer for 6th task is true
+[INFO ][2022-03-26 10:05:24,426][tasks.AbstractTask]  - Answer for 7th task is -0.8391287632564133
+[INFO ][2022-03-26 10:05:24,437][tasks.AbstractTask]  - Answer for 8th task is 2.0
