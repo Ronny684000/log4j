@@ -7,24 +7,24 @@ import org.apache.log4j.Logger;
 
 import java.util.Scanner;
 
-public interface ITask {
+public abstract class AbstractTask {
 
     DataConfig DATA = ConfigFactory.create(DataConfig.class);
-    Logger LOGGER = Logger.getLogger(ITask.class);
+    Logger LOGGER = Logger.getLogger(AbstractTask.class);
     Scanner SCANNER = new Scanner(System.in);
 
     /**
      * Contains logic of the task. Must be implemented in each Task
      * to carry out it's specific logic.
      * */
-    void calculate();
+    protected abstract void calculate();
 
     /**
      * Main method of task. Executes task, initiates its parameters, checks them
      * and makes a log for this steps.
      * @param inputType enum value to define parameters input type
      * */
-    default void execute(InputType inputType) {
+    public void execute(InputType inputType) {
         if (inputType == InputType.FILE) {
             initFileParams();
         } else {
@@ -42,11 +42,11 @@ public interface ITask {
      * Method that must be overridden for each specific task.
      * It is be used to log answer.
      * */
-    void logInfo();
+    protected abstract void logInfo();
 
-    void initFileParams();
+    protected abstract void initFileParams();
 
-    void initScannerParams();
+    protected abstract void initScannerParams();
 
     /**
      * Used for checking are the parameters correct.
@@ -54,5 +54,5 @@ public interface ITask {
      * Must contain conditions for params if it's required
      * @return boolean value which points are the parameters correct
      * */
-    boolean checkParams();
+    protected abstract boolean checkParams();
 }

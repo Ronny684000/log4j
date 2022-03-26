@@ -3,39 +3,42 @@ package tasks;
 import lombok.Data;
 
 @Data
-public class Task6 implements ITask {
+public class Task6 extends AbstractTask {
 
     private boolean answer;
     private double k;
     private double n;
     private double m;
 
+    /**
+     * Даны натуральные числа n, k. Проверить, есть ли в записи числа nk цифра m.
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         answer = String.valueOf(n * k).contains(String.valueOf(m));
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 6th task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         k = DATA.kSixthTask();
         n = DATA.nSixthTask();
         m = DATA.mSixthTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         k = SCANNER.nextInt();
         n = SCANNER.nextInt();
         m = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return m >= 0;
     }
 }

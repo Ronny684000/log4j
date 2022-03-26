@@ -5,13 +5,17 @@ import lombok.Data;
 import static java.lang.Math.*;
 
 @Data
-public class Task7 implements ITask {
+public class Task7 extends AbstractTask {
 
     private double answer;
     private double n;
 
+    /**
+     * Дано натуральное число N. Вычислить:
+     * S = 1/sin(1) + 2/(sin(1) + sin(2)) ...
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         double S = 0;
         double summed = 0;
         for (int i = 1; i <= n; i++) {
@@ -22,22 +26,22 @@ public class Task7 implements ITask {
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 7th task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         n = DATA.nSeventhTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         n = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return n > 0;
     }
 }

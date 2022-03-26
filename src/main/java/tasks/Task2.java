@@ -3,7 +3,7 @@ package tasks;
 import lombok.Data;
 
 @Data
-public class Task2 implements ITask {
+public class Task2 extends AbstractTask {
 
     private double sum;
     private double diff;
@@ -12,8 +12,12 @@ public class Task2 implements ITask {
     private double x;
     private double y;
 
+    /**
+     * Даны два действительных числа x и у.
+     * Вычислить их сумму, разность, произведение и частное.
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         double sum = x + y;
         double diff = x - y;
         double comp = x * y;
@@ -21,25 +25,25 @@ public class Task2 implements ITask {
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Task's 2 sum = " + sum + "; diff = " +
                 diff + "; comp = " + comp + "; div = " + div);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         x = DATA.xSecondTask();
         y = DATA.ySecondTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         x = SCANNER.nextInt();
         y = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return true;
     }
 }

@@ -3,13 +3,18 @@ package tasks;
 import lombok.Data;
 
 @Data
-public class Task8 implements ITask {
+public class Task8 extends AbstractTask {
 
     private double answer;
     private double s;
 
+    /**
+     * Дано натуральное число S. Дана последовательность 5, 9, 13, 17,...
+     * Сколько слагаемых следует взять, чтобы получить сумму, равную либо превышающую S?
+     * Результат вывести на экран.
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         int sum = 0;
         int counter = 0;
         int startNumber = 5;
@@ -22,22 +27,22 @@ public class Task8 implements ITask {
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 8th task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         s = DATA.sEighthTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         s = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return s > 0;
     }
 }

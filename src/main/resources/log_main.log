@@ -26,3 +26,11 @@
 [INFO ][2022-03-26 08:29:06,080][tasks.ITask]  - Answer of tasks.Task6 is true
 [INFO ][2022-03-26 08:29:06,100][tasks.ITask]  - Answer of tasks.Task7 is -0.8391287632564133
 [INFO ][2022-03-26 08:29:06,111][tasks.ITask]  - Answer of tasks.Task8 is 2.0
+[INFO ][2022-03-26 10:05:24,304][tasks.AbstractTask]  - Answer for 1st task is 5.707991444942615
+[INFO ][2022-03-26 10:05:24,342][tasks.AbstractTask]  - Task's 2 sum = 0.0; diff = 0.0; comp = 0.0; div = 0.0
+[INFO ][2022-03-26 10:05:24,369][tasks.AbstractTask]  - Answer for 3rd task is true
+[INFO ][2022-03-26 10:05:24,384][tasks.AbstractTask]  - Answer for 3rd task is 
+[INFO ][2022-03-26 10:05:24,404][tasks.AbstractTask]  - Answer for 5th task is 10.0 and 78.5
+[INFO ][2022-03-26 10:05:24,414][tasks.AbstractTask]  - Answer for 6th task is true
+[INFO ][2022-03-26 10:05:24,426][tasks.AbstractTask]  - Answer for 7th task is -0.8391287632564133
+[INFO ][2022-03-26 10:05:24,437][tasks.AbstractTask]  - Answer for 8th task is 2.0

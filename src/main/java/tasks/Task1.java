@@ -5,36 +5,40 @@ import lombok.Data;
 import static java.lang.Math.*;
 
 @Data
-public class Task1 implements ITask {
+public class Task1 extends AbstractTask {
 
     private double answer;
     private double x;
     private double y;
 
+    /**
+     * Вычислить значения выражения по формуле:
+     * 8(1 - tg(x))^ctg(x) + cos(x - y)
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
        answer = 8 * pow((1 - tan(x)), 1/tan(x)) + cos(x - y);
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 1st task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         x = DATA.xFirstTask();
         y = DATA.yFirstTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         x = SCANNER.nextInt();
         y = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return true;
     }
 }

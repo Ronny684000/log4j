@@ -3,33 +3,36 @@ package tasks;
 import lombok.Data;
 
 @Data
-public class Task3 implements ITask {
+public class Task3 extends AbstractTask {
 
     private boolean answer;
     private int n;
 
+    /**
+     * Дано трехзначное число N. Проверить, будет ли сумма его цифр четным числом.
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         answer = (n / 100 + n / 10 + n % 10) % 2 == 0;
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 3rd task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         n = DATA.nThirdTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         n = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return true;
     }
 }

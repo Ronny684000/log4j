@@ -7,13 +7,18 @@ import java.util.List;
 import static java.lang.Math.*;
 
 @Data
-public class Task4 implements ITask {
+public class Task4 extends AbstractTask {
 
     private String answer = "";
     private double x;
 
+    /**
+     * Дано число x. Напечатать в порядке возрастания числа: sin x, cos x, ln x.
+     * Если при каком-либо x некоторые из выражений не имеют смысла,
+     * вывести сообщение об этом и сравнивать значения только тех, которые имеют смысл.
+     * */
     @Override
-    public void calculate() {
+    protected void calculate() {
         double cosX = cos(x);
         double sinX = sin(x);
         double lnX = Math.log(x);
@@ -21,22 +26,22 @@ public class Task4 implements ITask {
     }
 
     @Override
-    public void logInfo() {
+    protected void logInfo() {
         LOGGER.info("Answer for 3rd task is " + answer);
     }
 
     @Override
-    public void initFileParams() {
+    protected void initFileParams() {
         x = DATA.xFourthTask();
     }
 
     @Override
-    public void initScannerParams() {
+    protected void initScannerParams() {
         x = SCANNER.nextInt();
     }
 
     @Override
-    public boolean checkParams() {
+    protected boolean checkParams() {
         return true;
     }
 }
